@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>  ANAIS - Cadastro de Autores</title>
+    </head>
+    <body>
+        <h1>Preencha os campos com as informações adequadas:</h1>
+        <form action="http://localhost:8080/AnaisClient/servlets/cadAutorServlet" method="post">
+            Primeiro Nome: <input type="text" name="nome"/><br/>
+            Nome do meio: <input type="text" name="nomemeio"/><br/>
+            Sobrenome: <input type="text" name="sobrenome"/><br/>
+            Email: <input type="email" name="email"/><br/>
+            País: <input type="text" name="pais"/><br/>
+            Registro: <input type="text" name="registro"/><br/>            
+            Afiliação: <input type="text" name="afiliacao"/><br/>
+            Afiliação Inglês: <input type="text" name="afiliacaoEN"/><br/>
+            Ordem do Autor no Artigo: <input  type="number" name="ordArtigo"/><br/>
+            <input type="submit" value="Salvar"/>
+        </form>
+    </body>
+</html>

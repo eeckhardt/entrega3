@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>  ANAIS - Cadastro de Volumes</title>
+    </head>
+    <body>
+        <h1>Preencha os campos com as informações adequadas:</h1>
+        <form action="http://localhost:8080/AnaisClient/cadVolumeServlet/" method="post">
+            Sigla: <input type="text" name="sigla"/><br/>
+            Edição: <input type="text" name="edicao"/><br/>
+            Cidade: <input type="text" name="Cidade"/><br/>
+            Data de Início: <input type="date" name="dtInicio"/><br/>
+            Descrição: <input type="text" name="descricao"/><br/>
+            Descrição em Inglês: <input type="text" name="descricaoEN"/><br/>            
+            
+            <input type="submit" value="Salvar"/>
+        </form>
+        <form action="http://localhost:8080/AnaisClient/resources/volume/todos" method="get">
+             
+            <input type="submit" value="Mostra Volume"/>
+        </form>
+        
+    </body>
+</html>
